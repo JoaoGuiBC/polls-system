@@ -11,3 +11,12 @@ content-type: application/json
 ### Find poll
 
 GET http://localhost:3333/polls/:pollId
+
+### Vote on poll option
+
+POST http://localhost:3333/polls/:pollId/votes
+content-type: application/json
+
+{
+  "pollOptionId": ":pollOptionId"
+}
