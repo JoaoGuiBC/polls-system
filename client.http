@@ -1,4 +1,4 @@
-# Create poll
+### Create poll
 
 POST http://localhost:3333/polls
 content-type: application/json
@@ -7,3 +7,7 @@ content-type: application/json
   "title": "Enquete de teste",
   "options": ["Opção 1", "Opção 2", "Opção 3"]
 }
+
+### Find poll
+
+GET http://localhost:3333/polls/:pollId
